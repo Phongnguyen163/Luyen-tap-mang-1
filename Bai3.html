@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="bd"></h2>
+<h3 id="s"></h3>
+<h3 id="t"></h3>
+<script>
+    let a =[12 ,15, 5, 6, 9, 20, 10, 8, 2, 1];
+    document.getElementById('bd').innerHTML= "Mang ban dau: [" + a+ "]";
+    let sum = 0;
+    let count;
+    let Max = a[0]
+    for (let i = 0; i < a.length; i++) {
+        sum = sum + a[i]
+        if (a[i] > Max) {
+            Max = a[i];
+            count = i;
+        }
+    }
+    document.getElementById('s').innerHTML = "Tong cac phan tu cua mang la: "+sum;
+    document.getElementById('t').innerHTML = "Phan tu lon nhat cua mang la:  "+Max+", o vi tri: " + count;
+</script>
+</body>
+</html>

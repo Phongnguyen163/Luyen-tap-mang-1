@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="bd"></h2>
+<h3 id="s"></h3>
+<script>
+    let a = [];
+    let count = 0;
+    for (let i = 0; i < 9; i++) {
+        let b = prompt("Nhap phan tu: ");
+        a.push(b);
+    }
+    document.getElementById('bd').innerHTML = "Mang ban dau: [" + a + "]";
+    for (let i = 0; i < a.length; i++) {
+        if (a[i]%1===0 && a[i] < 0){
+            count++;
+        }
+    }
+    document.getElementById('s').innerHTML = "So phan tu la so nguyen am trong 1 chuoi la: " + count;
+</script>
+</body>
+</html>

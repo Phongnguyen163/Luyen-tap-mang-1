@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="bd"></h2>
+<h3 id="s"></h3>
+<script>
+    let a=[];
+    for ( let i = 0 ; i < 9; i++) {
+        let b= prompt("Nhap phan tu: ");
+        a.push(b);
+    }
+    document.getElementById('bd').innerHTML = "Mang ban dau: [" + a + "]";
+    let first = 0;
+    let last = a.length-1;
+    while (first < last) {
+        let b = a[first];
+        a[first] = a[last];
+        a[last] = b;
+        first++;
+        last--;
+    }
+    document.getElementById('s').innerHTML = "Mang dao nguoc: [" + a + "]" ;
+</script>
+</body>
+</html>

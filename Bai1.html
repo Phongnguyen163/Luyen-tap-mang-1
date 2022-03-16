@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 id="bd"></h2>
+<h3 id="s"></h3>
+<script>
+    let a =[12 ,15, 5, 6, 9, 20, 10, 8, 2, 1];
+    document.getElementById('bd').innerHTML= "Mang ban dau: [" + a+ "]";
+    let text = "";
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] >= 10) {
+            text += " "+ a[i];
+            count++;
+        }
+    }
+    document.getElementById('s').innerHTML = "Trong mang co "+count+" phan tu thoa man dieu kien: " + text;
+</script>
+</body>
+</html>
